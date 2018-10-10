@@ -1,21 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="calculadora.CadastroController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculadora.CadastroController">
    <children>
-      <Label layoutX="74.0" layoutY="37.0" text="usuario" />
-      <Label layoutX="74.0" layoutY="102.0" text="senha" />
-      <Label layoutX="74.0" layoutY="150.0" text="confirmar senha" />
-      <TextField fx:id="usu" layoutX="74.0" layoutY="65.0" />
-      <PasswordField fx:id="senha1" layoutX="74.0" layoutY="119.0" />
-      <PasswordField fx:id="senha2" layoutX="74.0" layoutY="175.0" />
-      <Button layoutX="80.0" layoutY="246.0" mnemonicParsing="false" onAction="#cadastrar" text="Cadastrar" />
-      <Button layoutX="171.0" layoutY="246.0" mnemonicParsing="false" onAction="#voltar" text="Voltar" />
+      <ImageView fitHeight="199.0" fitWidth="167.0" layoutX="227.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/rubick_render_by_nestorn316-d7g19dz.png" />
+         </image>
+         <effect>
+            <Reflection />
+         </effect>
+      </ImageView>
+      <Label layoutX="43.0" layoutY="107.0" text="Usuario">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#00f510" />
+                  <Stop color="#ffab00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <Label layoutX="46.0" layoutY="172.0" text="Senha">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#b4fa00" />
+                  <Stop color="#b4fa00" offset="0.22988505747126436" />
+                  <Stop color="#00f510" offset="0.5632183908045977" />
+                  <Stop color="#00f510" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <Label layoutX="48.0" layoutY="229.0" text="Confirma ae mano">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#07fa00" />
+                  <Stop color="#07fa00" offset="0.1494252873563218" />
+                  <Stop color="WHITE" offset="0.5139629497965793" />
+                  <Stop color="#eaff00" offset="0.908045977011494" />
+                  <Stop color="#eaff00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <TextField fx:id="usu" layoutX="46.0" layoutY="141.0" />
+      <PasswordField fx:id="senha1" layoutX="46.0" layoutY="200.0" />
+      <PasswordField fx:id="senha2" layoutX="47.0" layoutY="261.0" />
+      <Button layoutX="27.0" layoutY="304.0" mnemonicParsing="false" onAction="#cadastrar" prefHeight="56.0" prefWidth="200.0" style="-fx-background-color: yellow;" text="CADASTRAR" textFill="#00ff48">
+         <font>
+            <Font name="Magneto Bold" size="20.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="261.0" layoutY="304.0" mnemonicParsing="false" onAction="#voltar" prefHeight="56.0" prefWidth="191.0" style="-fx-background-color: yellow;" text="VOLTAR" textFill="#00ff48">
+         <font>
+            <Font name="Magneto Bold" size="26.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="43.0" layoutY="14.0" text="Cadastrosil">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#00f510" />
+                  <Stop color="#ddff00" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="386.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/bandeira.png" />
+         </image>
+         <effect>
+            <Blend>
+               <topInput>
+                  <Blend />
+               </topInput>
+            </Blend>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="165.0" fitWidth="167.0" layoutX="421.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/louro-josé-png.png" />
+         </image>
+         <effect>
+            <MotionBlur />
+         </effect>
+      </ImageView>
    </children>
 </AnchorPane>
