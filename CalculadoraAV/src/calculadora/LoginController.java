@@ -59,7 +59,7 @@ public class LoginController implements Initializable {
       EntityManagerFactory emf = Persistence.createEntityManagerFactory("Calculadora");
       EntityManager em = emf.createEntityManager();
         
-        Query query = em.createQuery("SELECT f FROM Login as f WHERE f.usuario = :user ");
+        Query query = em.createQuery("SELECT f FROM Login as f WHERE f.usuario = :user");
         query.setParameter("user", txtusu.getText());
         if(query.getResultList().isEmpty()){
             Alert alert = new Alert(Alert.AlertType.WARNING);
@@ -81,8 +81,6 @@ public class LoginController implements Initializable {
                 stage.setScene(scene);
                 stage.show();
         }
-                 
-                
 
     }
    

@@ -35,7 +35,6 @@
                </stops>
             </LinearGradient>
          </textFill></Label>
-      <JFXTextField fx:id="txtusu" layoutX="92.0" layoutY="114.0" prefHeight="33.0" prefWidth="135.0" />
       <Label layoutX="61.0" layoutY="168.0" prefHeight="19.0" prefWidth="100.0" text="Senha">
          <font>
             <Font name="System Bold" size="22.0" />
@@ -59,9 +58,7 @@
          <font>
             <Font name="System Bold" size="26.0" />
          </font></Button>
-      <JFXPasswordField fx:id="txtsenha" layoutX="92.0" layoutY="173.0" />
-      <TextField layoutX="61.0" layoutY="127.0" />
-      <TextField layoutX="61.0" layoutY="200.0" />
+      <TextField fx:id="txtusu" layoutX="61.0" layoutY="127.0" />
       <Label layoutX="163.0" layoutY="14.0" text="LOGIN CALCULASIL">
          <font>
             <Font name="System Bold" size="30.0" />
@@ -79,5 +76,6 @@
             </LinearGradient>
          </textFill>
       </Label>
+      <PasswordField fx:id="txtsenha" layoutX="61.0" layoutY="200.0" />
    </children>
 </AnchorPane>

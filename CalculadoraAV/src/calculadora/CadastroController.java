@@ -80,9 +80,11 @@ public class CadastroController implements Initializable {
             stage.show();
             }
         catch(IOException e){
-            
+        
 
 }
+        
     }
+       
     
 }

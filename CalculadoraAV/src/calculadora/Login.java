@@ -19,7 +19,7 @@ public class Login {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id; 
-    private String usuario;
+    private String user;
     private String senha;
     private String confsenha;
 
@@ -39,11 +39,11 @@ public class Login {
     }
 
     public String getUsuario() {
-        return usuario;
+        return user;
     }
 
     public void setUsuario(String usuario) {
-        this.usuario = usuario;
+        this.user = usuario;
     }
 
     public String getSenha() {
