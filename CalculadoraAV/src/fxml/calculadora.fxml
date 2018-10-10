@@ -1,11 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.CalculadoraController">
-    
+<AnchorPane id="AnchorPane" prefHeight="372.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.CalculadoraController">
+   <children>
+      <Button fx:id="btn7" layoutX="44.0" layoutY="180.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="39.0" style="-fx-background-color: BLUE;" text="7" textFill="WHITE" />
+      <Button fx:id="btn4" layoutX="44.0" layoutY="214.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="39.0" style="-fx-background-color: white; -fx-border-color: black;" text="4" />
+      <Button fx:id="btn8" layoutX="96.0" layoutY="180.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="39.0" style="-fx-background-color: yellow;" text="8" />
+      <Button fx:id="btn5" layoutX="96.0" layoutY="214.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="39.0" style="-fx-background-color: blue;" text="5" textFill="WHITE" />
+      <Button fx:id="btn9" layoutX="148.0" layoutY="180.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="39.0" style="-fx-background-color: green;" text="9" />
+      <Button fx:id="btn6" layoutX="148.0" layoutY="214.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="39.0" style="-fx-background-color: yellow;" text="6" />
+      <Button fx:id="btn1" layoutX="44.0" layoutY="248.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="39.0" style="-fx-background-color: green;" text="1" />
+      <Button fx:id="btn2" layoutX="96.0" layoutY="248.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="39.0" style="-fx-background-color: white; -fx-border-color: black;" text="2" />
+      <Button fx:id="btn3" layoutX="148.0" layoutY="248.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="39.0" style="-fx-background-color: blue;" text="3" textFill="WHITE" />
+      <Button fx:id="btn0" layoutX="96.0" layoutY="281.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="39.0" style="-fx-background-color: GREEN;" text="0" />
+      <Button fx:id="btnIgual" layoutX="44.0" layoutY="281.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="39.0" style="-fx-background-color: yellow;" text="=" />
+      <Button fx:id="btnDiv" layoutX="148.0" layoutY="281.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="39.0" style="-fx-background-color: WHITE; -fx-border-color: black;" text="/" />
+      <Button fx:id="btnMenos" layoutX="198.0" layoutY="281.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="39.0" style="-fx-background-color: BLUE;" text="-" textFill="WHITE" />
+      <Button fx:id="btnMais" layoutX="198.0" layoutY="214.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="39.0" style="-fx-background-color: green;" text="+" textFill="WHITE" />
+      <Button fx:id="btnMulti" layoutX="198.0" layoutY="248.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="39.0" style="-fx-background-color: yellow;" text="*" />
+      <Button fx:id="btnCE" layoutX="198.0" layoutY="180.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="39.0" style="-fx-background-color: white; -fx-border-color: black;" text="CE" />
+      <TextField fx:id="btnResult" editable="false" layoutX="44.0" layoutY="46.0" prefHeight="63.0" prefWidth="193.0" promptText="RESULTADO">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </TextField>
+   </children>
 </AnchorPane>
