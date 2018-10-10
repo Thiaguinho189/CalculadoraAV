@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -9,6 +10,11 @@
 
 <AnchorPane id="AnchorPane" prefHeight="372.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.CalculadoraController">
    <children>
+      <ImageView fitHeight="199.0" fitWidth="287.0" layoutY="174.0" opacity="0.65" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/bandeira.png" />
+         </image>
+      </ImageView>
       <Button fx:id="btn7" layoutX="44.0" layoutY="180.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="39.0" style="-fx-background-color: BLUE;" text="7" textFill="WHITE" />
       <Button fx:id="btn4" layoutX="44.0" layoutY="214.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="39.0" style="-fx-background-color: white; -fx-border-color: black;" text="4" />
       <Button fx:id="btn8" layoutX="96.0" layoutY="180.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="39.0" style="-fx-background-color: yellow;" text="8" />
@@ -25,7 +31,7 @@
       <Button fx:id="btnMais" layoutX="198.0" layoutY="214.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="39.0" style="-fx-background-color: green;" text="+" textFill="WHITE" />
       <Button fx:id="btnMulti" layoutX="198.0" layoutY="248.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="39.0" style="-fx-background-color: yellow;" text="*" />
       <Button fx:id="btnCE" layoutX="198.0" layoutY="180.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="39.0" style="-fx-background-color: white; -fx-border-color: black;" text="CE" />
-      <TextField fx:id="btnResult" editable="false" layoutX="44.0" layoutY="46.0" prefHeight="63.0" prefWidth="193.0" promptText="RESULTADO">
+      <TextField fx:id="btnResult" editable="false" layoutX="39.0" layoutY="68.0" prefHeight="63.0" prefWidth="193.0" promptText="RESULTADO">
          <font>
             <Font size="29.0" />
          </font>
