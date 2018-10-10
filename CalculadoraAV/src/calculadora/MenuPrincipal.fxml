@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
 <?import com.jfoenix.controls.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -7,18 +10,83 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="393.0" prefWidth="502.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculadora.MenuPrincipalController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: BLUE;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculadora.MenuPrincipalController">
     <children>
-      <MenuBar layoutY="-1.0" prefHeight="30.0" prefWidth="502.0" style="-fx-background-color: #7B68EE;">
-        <menus>
-          <Menu mnemonicParsing="false" text="Abrir">
-            <items>
-              <MenuItem mnemonicParsing="false" onAction="#abrircalculadora" text="Calculadora" />
-                  <MenuItem mnemonicParsing="false" onAction="#abrirListagem" text="Mostrar" />
-                  <MenuItem mnemonicParsing="false" onAction="#fecharprojeto" text="Fechar" />
-            </items>
-          </Menu>
-        </menus>
-      </MenuBar>
+      <ImageView fitHeight="422.0" fitWidth="600.0" layoutY="-4.0" opacity="0.88" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/bandeira.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="223.0" layoutY="54.0" mnemonicParsing="false" onAction="#abrircalculadora" prefHeight="74.0" prefWidth="155.0" style="-fx-background-color: yellow;" text="Calculadora">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#0022ff" />
+                  <Stop color="#0022ff" offset="0.024054982817869414" />
+                  <Stop color="#00ff11" offset="0.47126436781609193" />
+                  <Stop color="#001eff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="223.0" layoutY="169.0" mnemonicParsing="false" onAction="#abrirListagem" prefHeight="74.0" prefWidth="155.0" style="-fx-background-color: green;" text="Mostrar">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#0022ff" />
+                  <Stop color="#0022ff" offset="0.03554923569143251" />
+                  <Stop color="WHITE" offset="0.11225658648339054" />
+                  <Stop color="WHITE" offset="0.8595410198680729" />
+                  <Stop color="#0026ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="223.0" layoutY="288.0" mnemonicParsing="false" onAction="#fecharprojeto" prefHeight="74.0" prefWidth="155.0" style="-fx-background-color: yellow;" text="Fechar">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#0022ff" />
+                  <Stop color="#0022ff" offset="0.007662835249042145" />
+                  <Stop color="#18ff00" offset="0.4879725085910653" />
+                  <Stop color="#0026ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="27.0" layoutY="16.0" prefHeight="55.0" prefWidth="175.0" text="MENU">
+         <font>
+            <Font name="System Bold" size="53.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#18ff00" />
+                  <Stop color="#18ff00" offset="0.4879725085910653" />
+                  <Stop color="#0026ff" offset="0.4948453608247423" />
+                  <Stop color="#0022ff" offset="0.544061302681992" />
+                  <Stop color="#0026ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
     </children>
 </AnchorPane>
