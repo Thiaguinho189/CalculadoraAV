@@ -58,7 +58,6 @@
          <font>
             <Font name="System Bold" size="26.0" />
          </font></Button>
-      <TextField fx:id="txtusu" layoutX="61.0" layoutY="127.0" />
       <Label layoutX="163.0" layoutY="14.0" text="LOGIN CALCULASIL">
          <font>
             <Font name="System Bold" size="30.0" />
@@ -76,6 +75,7 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <PasswordField fx:id="txtsenha" layoutX="61.0" layoutY="200.0" />
+      <TextField fx:id="txtusu" layoutX="58.0" layoutY="127.0" />
+      <PasswordField fx:id="txtsenha" layoutX="58.0" layoutY="200.0" />
    </children>
 </AnchorPane>

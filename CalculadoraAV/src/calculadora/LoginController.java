@@ -16,6 +16,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -30,9 +32,9 @@ import javax.persistence.Query;
 public class LoginController implements Initializable {
 
     @FXML
-    private JFXTextField txtusu;
+    private TextField txtusu;
     @FXML
-    private JFXPasswordField txtsenha;
+    private PasswordField txtsenha;
 
     /**
      * Initializes the controller class.
@@ -59,7 +61,7 @@ public class LoginController implements Initializable {
       EntityManagerFactory emf = Persistence.createEntityManagerFactory("Calculadora");
       EntityManager em = emf.createEntityManager();
         
-        Query query = em.createQuery("SELECT f FROM Login as f WHERE f.usuario = :user");
+        Query query = em.createQuery("SELECT f FROM Login as f WHERE f.user = :user");
         query.setParameter("user", txtusu.getText());
         if(query.getResultList().isEmpty()){
             Alert alert = new Alert(Alert.AlertType.WARNING);
@@ -69,7 +71,7 @@ public class LoginController implements Initializable {
             Login f =(Login) query.getSingleResult();
             if (!f.getSenha().equals(txtsenha.getText())){
               Alert alert = new Alert(Alert.AlertType.WARNING);
-            alert.setHeaderText("A senha não está errada.");
+            alert.setHeaderText("A senha está errada.");
             alert.showAndWait();
             }
             else{

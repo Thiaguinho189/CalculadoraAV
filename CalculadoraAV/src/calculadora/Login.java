@@ -38,12 +38,12 @@ public class Login {
         this.id = id;
     }
 
-    public String getUsuario() {
+    public String getUser() {
         return user;
     }
 
-    public void setUsuario(String usuario) {
-        this.user = usuario;
+    public void setUser(String user) {
+        this.user = user;
     }
 
     public String getSenha() {

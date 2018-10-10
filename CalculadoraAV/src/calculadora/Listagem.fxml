@@ -12,15 +12,15 @@
    <children>
       <TableView fx:id="tabela" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: BLUE;">
         <columns>
-          <TableColumn text="Id">
+          <TableColumn text="id">
             <cellValueFactory><PropertyValueFactory property="id" />
             </cellValueFactory>
          </TableColumn>
-         <TableColumn text="Numero 1">
+         <TableColumn text="Num1">
             <cellValueFactory><PropertyValueFactory property="firstN" />
             </cellValueFactory>
          </TableColumn>
-         <TableColumn text="Numero 2">
+         <TableColumn text="Num2">
             <cellValueFactory><PropertyValueFactory property="secondN" />
             </cellValueFactory>
          </TableColumn>
@@ -28,7 +28,7 @@
             <cellValueFactory><PropertyValueFactory property="operator" />
             </cellValueFactory>
          </TableColumn>
-         <TableColumn text="Resultados">
+         <TableColumn text="result">
             <cellValueFactory><PropertyValueFactory property="result" />
             </cellValueFactory>
          </TableColumn>

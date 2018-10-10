@@ -52,7 +52,7 @@ public class CadastroController implements Initializable {
 
         
         Login a = new Login();
-        a.setUsuario(usu.getText());
+        a.setUser(usu.getText());
         a.setSenha(senha1.getText());
         a.setConfsenha(senha2.getText());
         
@@ -83,7 +83,6 @@ public class CadastroController implements Initializable {
         
 
 }
-        
     }
        
     
