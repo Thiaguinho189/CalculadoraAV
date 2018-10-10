@@ -63,14 +63,26 @@ public class CadastroController implements Initializable {
         }
         else{
             Alert alert = new Alert(Alert.AlertType.WARNING);
-            alert.setHeaderText("A senha é diferente");
+            alert.setHeaderText("A senha está incorreta!");
             alert.showAndWait();
         }
     }
 
     @FXML
     private void voltar(ActionEvent event) throws IOException {
-   System.exit(0);
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader();
+            fxmlLoader.setLocation(getClass().getResource("Login.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(),600,500);
+            Stage stage = new Stage();
+            stage.setTitle("Login");
+            stage.setScene(scene);
+            stage.show();
+            }
+        catch(IOException e){
+            
+
+}
     }
     
 }

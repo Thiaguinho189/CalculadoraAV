@@ -20,9 +20,9 @@ public class Calcles {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private double firstN;
-    private double secondN;
-    private String operator;
+    private double Num1;
+    private double Num2;
+    private String operador;
     private double result;
 
     public Integer getId() {
@@ -33,28 +33,28 @@ public class Calcles {
         this.id = id;
     }
 
-    public double getFirstN() {
-        return firstN;
+    public double getNum1() {
+        return Num1;
     }
 
-    public void setFirstN(double firstN) {
-        this.firstN = firstN;
+    public void setNum1(double Num1) {
+        this.Num1 = Num1;
     }
 
-    public double getSecondN() {
-        return secondN;
+    public double getNum2() {
+        return Num2;
     }
 
-    public void setSecondN(double secondN) {
-        this.secondN = secondN;
+    public void setNum2(double Num2) {
+        this.Num2 = Num2;
     }
 
-    public String getOperator() {
-        return operator;
+    public String getOperador() {
+        return operador;
     }
 
-    public void setOperator(String operator) {
-        this.operator = operator;
+    public void setOperador(String operador) {
+        this.operador = operador;
     }
 
     public double getResult() {
@@ -64,7 +64,8 @@ public class Calcles {
     public void setResult(double result) {
         this.result = result;
     }
+
     public String toString() {
-        return this.operator;
+        return this.operador;
     }
 }

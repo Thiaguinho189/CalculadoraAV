@@ -46,7 +46,7 @@ public class LoginController implements Initializable {
     private void cadastrarL(ActionEvent event) throws IOException {
   FXMLLoader fxmlLoader = new FXMLLoader();
     fxmlLoader.setLocation(getClass().getResource("cadastro.fxml"));
-    Scene scene = new Scene(fxmlLoader.load(),500,500);
+    Scene scene = new Scene(fxmlLoader.load(),600,400);
     Stage stage = new Stage();
     stage.setTitle("Cadastro");
     stage.setScene(scene);
@@ -63,19 +63,19 @@ public class LoginController implements Initializable {
         query.setParameter("user", txtusu.getText());
         if(query.getResultList().isEmpty()){
             Alert alert = new Alert(Alert.AlertType.WARNING);
-            alert.setHeaderText("o usuario nao existe BROW");
+            alert.setHeaderText("o usuario não existe");
             alert.showAndWait();
         }else{
             Login f =(Login) query.getSingleResult();
             if (!f.getSenha().equals(txtsenha.getText())){
               Alert alert = new Alert(Alert.AlertType.WARNING);
-            alert.setHeaderText("A senha nao existe BROW");
+            alert.setHeaderText("A senha não está errada.");
             alert.showAndWait();
             }
             else{
                 FXMLLoader fxmlLoader = new FXMLLoader();
                 fxmlLoader.setLocation(getClass().getResource("MenuPrincipal.fxml"));
-                Scene scene = new Scene(fxmlLoader.load(),500,500);
+                Scene scene = new Scene(fxmlLoader.load(),600,400);
                 Stage stage = new Stage();
                 stage.setTitle("Menu Principal");
                 stage.setScene(scene);

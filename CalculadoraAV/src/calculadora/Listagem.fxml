@@ -12,23 +12,23 @@
    <children>
       <TableView fx:id="tabela" prefHeight="521.0" prefWidth="618.0">
         <columns>
-          <TableColumn text="id">
+          <TableColumn text="Id">
             <cellValueFactory><PropertyValueFactory property="id" />
             </cellValueFactory>
          </TableColumn>
-         <TableColumn text="firstN">
+         <TableColumn text="Numero 1">
             <cellValueFactory><PropertyValueFactory property="firstN" />
             </cellValueFactory>
          </TableColumn>
-         <TableColumn text="secondN">
+         <TableColumn text="Numero 2">
             <cellValueFactory><PropertyValueFactory property="secondN" />
             </cellValueFactory>
          </TableColumn>
-         <TableColumn text="operator">
+         <TableColumn text="Operador">
             <cellValueFactory><PropertyValueFactory property="operator" />
             </cellValueFactory>
          </TableColumn>
-         <TableColumn text="result">
+         <TableColumn text="Resultados">
             <cellValueFactory><PropertyValueFactory property="result" />
             </cellValueFactory>
          </TableColumn>

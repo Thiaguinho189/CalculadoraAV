@@ -46,7 +46,7 @@
                </stops>
             </LinearGradient>
          </textFill></Label>
-      <Label layoutX="48.0" layoutY="229.0" text="Confirma ae mano">
+      <Label layoutX="48.0" layoutY="229.0" text="Confirma a senha">
          <font>
             <Font name="System Bold" size="22.0" />
          </font>

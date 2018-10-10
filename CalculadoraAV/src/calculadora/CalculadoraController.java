@@ -205,9 +205,9 @@ public class CalculadoraController implements Initializable {
                 EntityManager em = emf.createEntityManager();
 
                 Calcles a = new Calcles();
-                a.setFirstN(valor1);
-                a.setSecondN(valor2);
-                a.setOperator(op);
+                a.setNum1(valor1);
+                a.setNum2(valor2);
+                a.setOperador(op);
                 a.setResult(resultado);
                 em.getTransaction().begin();
 
